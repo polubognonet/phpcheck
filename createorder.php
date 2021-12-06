@@ -5,6 +5,7 @@ $api = new Binance\API("khIlwP8nFIHdySoLeRR1uPjBGvP1LyWfSEo4pio307oc7FhgipVdmsFz
 $quantity = 0.09;
 $price = 180;
 $order = $api->buy("SOLBUSD", $quantity, $price);
+print_r($order);
 
 
  ?>
