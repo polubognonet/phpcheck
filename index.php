@@ -3,13 +3,13 @@
 require 'vendor/autoload.php';
 $api = new Binance\API("khIlwP8nFIHdySoLeRR1uPjBGvP1LyWfSEo4pio307oc7FhgipVdmsFzw4OIb57V","AwmjVWVJgXa2TpgrWLDUUaxngM1AEIWPXJSGO9LmBPI45ZokIVyRki1Zze4fMHAr");
 $balance_update = function($api, $balances) {
-	print_r($balances);
 	echo "Balance update".PHP_EOL;
+	print_r($balances);
 };
 
 $order_update = function($api, $report) {
 	echo "Order update".PHP_EOL;
-	print_r($report);
+	echo $report['symbol'];
 	$price = $report['price'];
 	$quantity = $report['quantity'];
 	$symbol = $report['symbol'];
