@@ -9,7 +9,7 @@ $balance_update = function($api, $balances) {
 
 $order_update = function($api, $report) {
 	echo "Order update".PHP_EOL;
-	echo $report['symbol'];
+	print_r($report);
 	$price = $report['price'];
 	$quantity = $report['quantity'];
 	$symbol = $report['symbol'];
