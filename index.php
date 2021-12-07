@@ -28,6 +28,9 @@ $order_update = function($api, $report) {
 	}
 	//NEW, CANCELED, REPLACED, REJECTED, TRADE, EXPIRED
 	echo "{$symbol} {$side} {$executionType} {$orderType} ORDER #{$orderId}".PHP_EOL;
+ if ( $orderStatus == "FILLED" ) {
+ 	
+ }
 };
 $api->userData($balance_update, $order_update);
 //
